@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 1</title>
+</head>
+<body>
+
+<script>
+
+async function buscarUsuario(){
+
+    let resposta = await fetch("https://jsonplaceholder.typicode.com/users/2");
+
+    let usuario = await resposta.json();
+
+    console.log(usuario.name);
+
+}
+
+buscarUsuario();
+
+</script>
+
+</body>
+</html>

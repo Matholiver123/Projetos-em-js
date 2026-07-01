@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Adulto Estudante</title>
+</head>
+<body>
+    <script>
+        let idade = prompt("Digite sua idade:");
+        let estudando = prompt("Você está estudando? (sim/não)");
+
+        idade = Number(idade);
+        estudando = estudando.toLowerCase() === "sim"; // converte pra boolean
+
+        if (idade >= 18 && estudando) {
+            console.log("Adulto estudante");
+        } else {
+            console.log("Outro caso");
+        }
+    </script>
+</body>
+</html>

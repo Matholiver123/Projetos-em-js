@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora Math</title>
+</head>
+<body>
+
+<h2>JS Math</h2>
+<p id="resultadoMath"></p>
+
+<script>
+let n1 = 10;
+let n2 = 3;
+
+let resultado = `
+Soma: ${n1 + n2} <br>
+Subtração: ${n1 - n2} <br>
+Multiplicação: ${n1 * n2} <br>
+Divisão: ${n1 / n2} <br>
+Raiz quadrada de 25: ${Math.sqrt(25)} <br>
+Potência 2^3: ${Math.pow(2,3)} <br>
+Arredondar 4.7: ${Math.round(4.7)} <br>
+Número aleatório: ${Math.random()}
+`;
+
+document.getElementById("resultadoMath").innerHTML = resultado;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Projeto Maps</title>
+</head>
+<body>
+
+<h2>JS Maps</h2>
+<p id="resultadoMap"></p>
+
+<script>
+let alunos = new Map();
+
+alunos.set("Matheus", 8);
+alunos.set("Ana", 9);
+alunos.set("Lucas", 7);
+
+let texto = "";
+
+alunos.forEach((nota, nome) => {
+    texto += nome + " - Nota: " + nota + "<br>";
+});
+
+texto += "<br>Nota da Ana: " + alunos.get("Ana");
+
+document.getElementById("resultadoMap").innerHTML = texto;
+</script>
+
+</body>
+</html>

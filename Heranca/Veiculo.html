@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veiculo</title>
+</head>
+<body>
+    <script>
+        class Veiculo{
+            ligar(){
+                console.log("O veículo está ligado!");
+            }
+        }
+
+        class Carro extends Veiculo{
+            ligar(){
+                console.log("O carro está ligado!");
+            }
+        }
+
+        let carro = new Carro();
+        carro.ligar();
+    </script>
+</body>
+</html>

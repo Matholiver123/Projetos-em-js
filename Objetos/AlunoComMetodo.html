@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aluno</title>
+</head>
+<body>
+<script>
+
+let aluno = {
+    nome: prompt("Digite o nome do aluno: "),
+    idade: Number(prompt("Digite a idade do aluno: ")),
+    nota: Number(prompt("Digite a nota do aluno: ")),
+
+    resultado: function () {
+        if (this.nota >= 7) {
+            console.log(this.nome + " foi Aprovado");
+        } 
+        else if (this.nota >= 5) {
+            console.log(this.nome + " está em Recuperação");
+        } 
+        else {
+            console.log(this.nome + " foi Reprovado");
+        }
+    }
+};
+
+// chamar o método
+aluno.resultado();
+
+</script>
+</body>
+</html>

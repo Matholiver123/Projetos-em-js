@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise</title>
+</head>
+<body>
+
+<script>
+    let promessa = new Promise((resolve, reject) => {
+
+        let condicao = true;
+
+        if(condicao){
+            resolve("Promessa resolvida com sucesso!");
+        }else{
+            reject("Promessa rejeitada!");
+        }
+
+    });
+
+    promessa
+        .then((resultado) => {
+            console.log(resultado);
+        })
+        .catch((erro) => {
+            console.log(erro);
+        });
+
+</script>
+
+</body>
+</html>

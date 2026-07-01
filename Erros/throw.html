@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function dividir(a,b){
+
+if(b == 0){
+    throw "Não pode dividir por zero!";
+}
+
+return a/b;
+
+}
+
+try{
+
+console.log(dividir(10,0));
+
+}catch(erro){
+
+console.log(erro);
+
+}
+    </script>
+</body>
+</html>

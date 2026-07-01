@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Getters e Setters</title>
+</head>
+<body>
+
+<script>
+
+class Aluno {
+
+    constructor(nota){
+        this._nota = nota;
+    }
+
+    get nota(){
+        return this._nota;
+    }
+
+    set nota(novaNota){
+        if(novaNota >= 0 && novaNota <= 10){
+            this._nota = novaNota;
+        } else {
+            console.log("Nota inválida!");
+        }
+    }
+
+}
+
+
+let aluno = new Aluno(8);
+
+
+console.log(aluno.nota);
+
+aluno.nota = 12;
+
+console.log(aluno.nota);
+
+aluno.nota = 10;
+
+console.log(aluno.nota);
+
+</script>
+
+</body>
+</html>

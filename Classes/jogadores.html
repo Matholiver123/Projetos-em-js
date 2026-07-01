@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe Jogador</title>
+</head>
+<body>
+    <script>
+        class Jogador {
+            constructor(nome, time){
+                this.nome = nome;
+                this.time = time;
+            }
+    
+            apresentar(){
+                console.log(this.nome + " joga no " + this.time);
+            }
+        }
+    
+        let jogador1 = new Jogador("Matheus", "São Paulo");
+    
+        jogador1.apresentar();
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar Interativo</title>
+</head>
+<body>
+    <script>
+          let continuar = "sim";
+
+          while(continuar.toLowerCase() === "sim") {
+            let numero = Number(prompt("Digite um número:"));
+
+            
+            if(numero % 2 === 0) {
+                console.log("O número " + numero + " é Par");
+            } else {
+                console.log("O número " + numero + " é Ímpar");
+            }
+            continuar = prompt("Deseja continuar? (sim/não)");
+          }
+          console.log("Programa encerrado. Até a próxima!");
+    </script>
+</body>
+</html>

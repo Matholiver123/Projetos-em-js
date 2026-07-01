@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #quadrado{
+    width:100px;
+    height:100px;
+    background:red;
+    transition:0.5s;
+}
+    </style>
+    <title>quadrado</title>
+</head>
+<body>
+    <div id="quadrado"
+     onmouseover="ficarAzul()"
+     onmouseout="ficarVermelho()">
+</div>
+<script>
+    function ficarAzul(){
+    document.getElementById("quadrado").style.background = "blue";
+}
+
+function ficarVermelho(){
+    document.getElementById("quadrado").style.background = "red";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+</head>
+<body>
+    <script>
+  class Produto{
+        constructor(nome){
+            this._nome = nome;
+        }
+
+        get nome(){
+            return this._nome;
+        }
+
+        set nome(novoNome){
+            this._nome = novoNome;
+        }
+    }
+
+    let produto = new Produto("Notebook");
+
+    console.log(produto.nome);
+
+    produto.nome = "Mouse";
+
+    console.log(produto.nome);
+    </script>
+</body>
+</html>

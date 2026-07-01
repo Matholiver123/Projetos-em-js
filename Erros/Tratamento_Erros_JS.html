@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Tratamento de Erros</title>
+</head>
+<body>
+
+<h2>Tratamento de Erros</h2>
+<p id="resultadoErro"></p>
+
+<script>
+try {
+    let numero = 10;
+    let resultado = numero / 0;
+
+    if (!isFinite(resultado)) {
+        throw new Error("Divisão por zero não permitida.");
+    }
+
+    document.getElementById("resultadoErro").innerHTML = resultado;
+
+} catch (erro) {
+    document.getElementById("resultadoErro").innerHTML =
+    "Erro encontrado: " + erro.message;
+
+} finally {
+    console.log("Finalizado.");
+}
+</script>
+
+</body>
+</html>

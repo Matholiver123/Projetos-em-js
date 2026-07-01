@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Conversões JS</title>
+</head>
+<body>
+
+<h2>Conversões em JavaScript</h2>
+<p id="resultadoConversao"></p>
+
+<script>
+let textoNumero = "25";
+
+// String → Número
+let numeroConvertido = Number(textoNumero);
+
+// Número → String
+let numero = 100;
+let numeroParaTexto = numero.toString();
+
+// Boolean
+let valor = 0;
+let booleano = Boolean(valor);
+
+let resultado = `
+String original: ${textoNumero} <br>
+Convertido para número: ${numeroConvertido} <br><br>
+
+Número original: ${numero} <br>
+Convertido para string: ${numeroParaTexto} <br><br>
+
+Valor: ${valor} <br>
+Convertido para boolean: ${booleano} <br><br>
+
+Tipo de numeroConvertido: ${typeof numeroConvertido} <br>
+Tipo de numeroParaTexto: ${typeof numeroParaTexto}
+`;
+
+document.getElementById("resultadoConversao").innerHTML = resultado;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relogio Digital</title>
+</head>
+<body>
+    <script>
+     function atualizarRelogio() {
+            var data = new Date();
+            var hora = data.getHours();
+            var minuto = data.getMinutes();
+            var segundo = data.getSeconds();
+
+            if (hora < 10) hora = "0" + hora;
+            if (minuto < 10) minuto = "0" + minuto;
+            if (segundo < 10) segundo = "0" + segundo;
+
+            document.getElementById("Relogio").innerHTML = 
+                hora + ":" + minuto + ":" + segundo;
+        }
+        setInterval(atualizarRelogio, 1000);
+    </script>
+</body>
+</html>

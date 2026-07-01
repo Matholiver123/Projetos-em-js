@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuscaPalavra</title>
+</head>
+<body>
+    <script>
+        let frase = prompt("Digite uma frase:");
+        let palavra = prompt("Digite uma palavra para buscar na frase:");
+
+        // Verifica se a palavra existe na frase
+        let existe = frase.includes(palavra);
+        console.log("A palavra existe na frase? " + existe);
+
+        // Índice da primeira ocorrência
+        let indice = frase.indexOf(palavra);
+        console.log("Índice da primeira ocorrência: " + indice);
+
+        // Verifica se a frase começa ou termina com a palavra
+        console.log("A frase começa com a palavra? " + frase.startsWith(palavra));
+        console.log("A frase termina com a palavra? " + frase.endsWith(palavra));
+    </script>
+</body>
+</html>

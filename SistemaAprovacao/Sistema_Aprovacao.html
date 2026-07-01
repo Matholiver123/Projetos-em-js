@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Aprovação</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Digite seu nome:");
+        let idade = prompt("Digite sua idade:");
+        let nota = prompt("Digite uma nota:");
+
+        idade = Number(idade);
+        nota = Number(nota);
+
+        if(nota >= 7)
+        {
+            console.log("Aprovado!");
+        }
+        else if(nota >= 5)
+        {
+        console.log("Recuperação");
+        }
+        else
+        {
+            console.log("Reprovado!");
+        }
+
+        console.log("Nome: " + nome);
+        console.log("Idade: " + idade);
+        console.log("Nota: " + nota);
+
+
+    </script>
+</body>
+</html>

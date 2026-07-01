@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando a cor do quadrado</title>
+
+    <style>
+        #quadrado {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="quadrado"></div>
+
+    <button onclick="esquerda()">Esquerda</button>
+    <button onclick="direita()">Direita</button>
+
+    <script>
+       let posicao = 0;
+
+function direita(){
+    posicao += 20;
+
+    let quadrado = document.getElementById("quadrado");
+    quadrado.style.marginLeft = posicao + "px";
+}
+
+function esquerda(){
+    posicao -= 20;
+
+    let quadrado = document.getElementById("quadrado");
+    quadrado.style.marginLeft = posicao + "px";
+}
+    </script>
+
+</body>
+</html>

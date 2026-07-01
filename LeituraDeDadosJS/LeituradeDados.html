@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura de Dados</title>
+</head>
+<body>
+    <script>
+
+        let nome = prompt("Digite seu nome:");
+        let idade = prompt("Digite sua idade:");
+        let altura = prompt("Digite sua altura:");
+        let trabalhando = prompt("Trabalhando? ");
+
+        idade = Number(idade);
+        altura = Number(altura);
+        trabalhando = trabalhando.toLowerCase() === "sim";
+
+        console.log("Nome: " + nome);
+        console.log("Idade: " + idade);
+        console.log("Altura: " + altura);
+        console.log("Sua situação: " + trabalhando);
+    </script>
+</body>
+</html>

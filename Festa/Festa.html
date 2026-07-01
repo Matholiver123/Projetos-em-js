@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Festa</title>
+</head>
+<body>
+    <script>
+        let idade = prompt("Digite sua idade:");
+        let dinheiro = prompt("Você tem dinheiro? (sim/não)");
+
+        idade = Number(idade);
+        dinheiro = dinheiro.toLowerCase() === "sim";
+
+        if (idade >= 18 || dinheiro) {
+            console.log("Pode entrar na festa 🎉");
+        } else {
+            console.log("Não pode entrar ❌");
+        }
+    </script>
+</body>
+</html>

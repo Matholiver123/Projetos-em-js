@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar hora atual</title>
+</head>
+<body>
+    <script>
+        function MostrarHora(){
+            var horas = getHours();
+            var minutos = getMinutes();
+
+            if (hora < 10) hora = "0" + hora;
+            if (minuto < 10) minuto = "0" + minuto;
+            console.log("Agora são: " + hora + ":" + minuto);
+
+        }
+        MostrarHora();
+    </script>
+</body>
+</html>

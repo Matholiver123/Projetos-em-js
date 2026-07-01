@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Desestruturação</title>
+</head>
+<body>
+
+<h2>Desestruturação</h2>
+<p id="resultadoDes"></p>
+
+<script>
+let pessoa = {
+    nome: "Matheus",
+    idade: 18,
+    cidade: "São Paulo"
+};
+
+// Desestruturação
+let { nome, idade, cidade } = pessoa;
+
+document.getElementById("resultadoDes").innerHTML =
+`Nome: ${nome} <br>
+Idade: ${idade} <br>
+Cidade: ${cidade}`;
+</script>
+
+</body>
+</html>

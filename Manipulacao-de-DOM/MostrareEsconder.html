@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar e esconder</title>
+</head>
+<body>
+    <p id="texto">Olá DOM</p>
+    <button onclick="esconder()">
+        esconder
+    </button>
+
+    <button onclick="mostrar()">
+        mostrar
+    </button>
+    <script>
+        function esconder (){
+            document.getElementById("texto").style.display = "none";
+        }
+        function mostrar (){
+            document.getElementById("texto").style.display = "block";
+        }
+    </script>
+</body>
+</html>

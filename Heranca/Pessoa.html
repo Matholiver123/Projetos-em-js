@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe pessoas</title>
+</head>
+<body>
+    <script>
+        class Pessoa{
+            apresentar(){
+                console.log("Olá, eu sou uma pessoa!");
+            }
+
+        }
+        class Aluno extends Pessoa{
+            apresentar(){
+                console.log("Olá, eu sou um aluno!");
+            }
+        }
+        let aluno = new Aluno();
+        aluno.apresentar();
+    </script>
+</body>
+</html>

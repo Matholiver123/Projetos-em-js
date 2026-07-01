@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+
+    <input id="nome">
+
+    <button onclick="verificarNome()">
+        Enviar
+    </button>
+
+    <h2 id="resultado"></h2>
+
+<script>
+    function verificarNome(){
+        let nome = document.getElementById("nome").value; 
+
+        if(nome === ""){ 
+            document.getElementById("resultado").innerHTML = "O campo está vazio!";
+        } else {
+            document.getElementById("resultado").innerHTML = "Campo preenchido corretamente!";
+        }
+    }
+</script>
+</body>
+</html>

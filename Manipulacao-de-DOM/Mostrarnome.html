@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Nome</title>
+</head>
+<body>
+    <input id="nome">
+
+    <button onclick="MudarNome()">
+        Mostrar Nome
+    </button>
+    
+    <h1 id="titulo">Matheus</h1>
+    <script>
+        function MudarNome(){
+            let nome = document.getElementById("nome").value;
+            document.getElementById("titulo").innerHTML = "Olá, " + nome;
+        }
+    </script>
+    
+</body>
+</html>

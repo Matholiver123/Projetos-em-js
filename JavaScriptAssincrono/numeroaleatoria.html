@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Async/Await</title>
+</head>
+<body>
+
+<script>
+    function numeroAleatorio(){
+        return new Promise((resolve) => {
+
+            setTimeout(() => {
+                resolve(100);
+            }, 3000);
+
+        });
+    }
+
+    async function exibirNumero(){
+        let numero = await numeroAleatorio();
+
+        console.log(numero);
+    }
+
+    exibirNumero();
+</script>
+
+</body>
+</html>

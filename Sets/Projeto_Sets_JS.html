@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Projeto Sets</title>
+</head>
+<body>
+
+<h2>JS Sets</h2>
+<p id="resultadoSet"></p>
+
+<script>
+let numeros = new Set();
+
+numeros.add(10);
+numeros.add(20);
+numeros.add(10);
+
+let texto = "Valores no Set:<br>";
+
+numeros.forEach(valor => {
+    texto += valor + "<br>";
+});
+
+texto += "Tem 20? " + numeros.has(20);
+
+document.getElementById("resultadoSet").innerHTML = texto;
+</script>
+
+</body>
+</html>

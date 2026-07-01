@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Async/Await</title>
+    </head>
+    <body>
+    
+    <script>
+        function mensagem(){
+            return new Promise((resolve) => {
+    
+                setTimeout(() => {
+                    resolve("Olá, Matheus!");
+                }, 2000);
+    
+            });
+        }
+    
+        async function mostrar(){
+            let resultado = await mensagem();
+    
+            console.log(resultado);
+        }
+    
+        mostrar();
+    </script>
+    
+    </body>
+    </html>

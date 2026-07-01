@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Debug JS</title>
+</head>
+<body>
+
+<h2>Depuração JavaScript</h2>
+<button onclick="calcular()">Testar Debug</button>
+<p id="resultadoDebug"></p>
+
+<script>
+function calcular() {
+
+    console.log("Função iniciada");
+
+    let numero = "10";
+
+    console.log("Valor inicial:", numero);
+    console.log("Tipo:", typeof numero);
+
+    if (isNaN(numero)) {
+        console.error("Não é um número válido");
+        document.getElementById("resultadoDebug").innerHTML =
+        "Erro: valor inválido";
+        return;
+    }
+
+    let convertido = Number(numero);
+
+    console.warn("Número convertido:", convertido);
+
+    let resultado = convertido * 2;
+
+    console.log("Resultado final:", resultado);
+
+    document.getElementById("resultadoDebug").innerHTML =
+    "Resultado: " + resultado;
+}
+</script>
+
+</body>
+</html>
